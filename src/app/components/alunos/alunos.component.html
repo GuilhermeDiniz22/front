@@ -1,0 +1,42 @@
+<div class="container p-5">
+    <div class="row">
+        <div class="col-6 border border-light rounded p-5 shadow" *ngIf="formulario">
+            <h5>{{tituloFormulario}}</h5>
+            <hr>
+
+            <form [formGroup]="formulario">
+                <div class="form-group">
+                    <label>Nome</label>
+                    <input type="text" class="form-control form-control-sm" formControlName="nome">
+                </div> 
+
+                <div class="form-group">
+                    <label>Sobrenome</label>
+                    <input type="text" class="form-control form-control-sm" formControlName="sobrenome">
+                </div> 
+
+                <div class="form-group">
+                    <label>Idade</label>
+                    <input type="number" class="form-control form-control-sm" formControlName="idade">
+                </div> 
+
+                <div class="form-group">
+                    <label>Curso</label>
+                    <input type="text" class="form-control form-control-sm" formControlName="curso">
+                </div> 
+
+                <div class="container">
+                    <div class="row">
+                        <div class="pl-1">
+                            <button type="submit" class="btn btn-sm btn-outline-secondary">Salvar</button>
+                        </div>
+
+                        <div class="pl-1">
+                            <button type="submit" class="btn btn-sm btn-light">Voltar</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
